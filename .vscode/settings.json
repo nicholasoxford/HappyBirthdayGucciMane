@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/opt/anaconda3/envs/bs4/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.mypyEnabled": false
+}
