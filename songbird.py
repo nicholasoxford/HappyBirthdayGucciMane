@@ -106,5 +106,5 @@ class Songbird:
         return string
 
 if __name__ == '__main__':
-    tswift_bird = Songbird('all_tswift_lyrics.txt')
+    tswift_bird = Songbird('gucci_mane_poetry.txt')
     print tswift_bird.generate(100)

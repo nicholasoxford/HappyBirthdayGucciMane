@@ -50,7 +50,7 @@ def get_stopwords():
 def make_txt_alllyrics():
     songs = get_lyrics_json()
 
-    with open('all_tswift_lyrics.txt', 'wb') as f:
+    with open('gucci_mane_poetry.txt', 'wb') as f:
         for song in songs:
             f.write(song['lyrics'])
 
@@ -138,14 +138,14 @@ if __name__ == '__main__':
             album_info[year]['vocab'][word] /= float(num_songs)
 
     vocab2006 = album_info['2006']['vocab']
-    vocab2014 = album_info['2011']['vocab']
+    vocab2014 = album_info['2012']['vocab']
 
     diff = {key: vocab2014[key] - vocab2006.get(key, 0) for key in vocab2014.keys()}
-    print 'Top 5 words grown in use from 2006 to 2011'
+    print 'Top 5 words grown in use from 2006 to 2012'
     for i,j in sorted(diff.items(), reverse=True, key=operator.itemgetter(1))[:5]:
         print i, j
     print
-    print 'Top 5 words decrease in use from 2006 to 2011'
+    print 'Top 5 words decrease in use from 2006 to 2012'
     for i,j in sorted(diff.items(), reverse=True, key=operator.itemgetter(1))[-5:]:
         print i,j
     # differences
